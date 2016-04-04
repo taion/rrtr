@@ -1,10 +1,9 @@
-# react-router [![Travis][build-badge]][build] [![npm package][npm-badge]][npm]
+# react-router [![npm package][npm-badge]][npm]
 
 [`react-router`](https://www.npmjs.com/package/react-router) is a complete routing library for [React](https://facebook.github.io/react).
 
 React Router keeps your UI in sync with the URL. It has a simple API with powerful features like lazy code loading, dynamic route matching, and location transition handling built right in. Make the URL your first thought, not an after-thought.
 
-[![Coveralls][coveralls-badge]][coveralls]
 [![Discord][discord-badge]][discord]
 
 ### Docs & Help
@@ -135,14 +134,8 @@ React Router was initially inspired by Ember's fantastic router. Many thanks to 
 
 Also, thanks to [BrowserStack](https://www.browserstack.com/) for providing the infrastructure that allows us to run our build in real browsers.
 
-[build-badge]: https://img.shields.io/travis/reactjs/react-router/master.svg?style=flat-square
-[build]: https://travis-ci.org/reactjs/react-router
-
-[npm-badge]: https://img.shields.io/npm/v/react-router.svg?style=flat-square
-[npm]: https://www.npmjs.org/package/react-router
-
-[coveralls-badge]: https://img.shields.io/coveralls/reactjs/react-router/master.svg?style=flat-square
-[coveralls]: https://coveralls.io/github/reactjs/react-router
+[npm-badge]: https://img.shields.io/npm/v/react-router2.svg?style=flat-square
+[npm]: https://www.npmjs.org/package/react-router2
 
 [discord-badge]: https://img.shields.io/badge/Discord-join%20chat%20%E2%86%92-738bd7.svg?style=flat-square
 [discord]: https://discord.gg/0ZcbPKXt5bYaNQ46
