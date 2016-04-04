@@ -1,3 +1,11 @@
+## [v2.1.1]
+> 2016-04-04
+
+- **Minor:** Fix packaging error
+
+[v2.1.1]: https://github.com/taion/react-router/compare/v2.1.0...v2.1.1
+
+
 ## [v2.1.0]
 > 2016-04-04
 
@@ -9,6 +17,7 @@
 [#3108]: https://github.com/reactjs/react-router/pull/3108
 [#3213]: https://github.com/reactjs/react-router/pull/3213
 [#3217]: https://github.com/reactjs/react-router/pull/3217
+
 
 ## [v2.0.1]
 > March 9, 2016
