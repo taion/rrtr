@@ -1,11 +1,11 @@
-## [HEAD] \(v2.1.0\)
-> Unreleased
+## [v2.1.0]
+> 2016-04-04
 
 - **Feature:** Add support for `onChange` hook on routes ([#3108])
 - **Minor:** Include full warning messages in non-minified UMD build ([#3213])
 - **Minor:** Speed up path matching ([#3217])
 
-[HEAD]: https://github.com/reactjs/react-router/compare/latest...HEAD
+[v2.1.0]: https://github.com/taion/react-router/compare/v2.0.1...v2.1.0
 [#3108]: https://github.com/reactjs/react-router/pull/3108
 [#3213]: https://github.com/reactjs/react-router/pull/3213
 [#3217]: https://github.com/reactjs/react-router/pull/3217
