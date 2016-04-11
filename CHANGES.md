@@ -1,3 +1,14 @@
+## [HEAD] \(v2.2.0\)
+> Unreleased
+
+- **Deprecation:** Deprecate nested routes with absolute paths ([6f40116])
+- **Bugfix:** Stop matching extraneous slashes in paths ([#3158])
+
+[HEAD]: https://github.com/taion/rrtr/compare/v2.1.2...HEAD
+[6f40116]: https://github.com/taion/rrtr/commit/6f401169415da3e5b34eb93beb846468a0a369b2
+[#3158]: https://github.com/reactjs/react-router/pull/3158
+
+
 ## [v2.1.2]
 > 2016-04-11
 
