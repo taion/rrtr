@@ -1,6 +1,6 @@
 {
-  "name": "react-router",
-  "version": "2.0.1",
+  "name": "react-router2",
+  "version": "2.1.1",
   "description": "A complete routing library for React.js",
   "files": [
     "*.md",
@@ -11,9 +11,8 @@
   ],
   "main": "lib/index",
   "jsnext:main": "es6/index",
-  "repository": "reactjs/react-router",
-  "homepage": "https://reactjs.org/react-router/",
-  "bugs": "https://github.com/reactjs/react-router/issues",
+  "repository": "taion/react-router",
+  "bugs": "https://github.com/taion/react-router/issues",
   "scripts": {
     "build": "npm run build-cjs && npm run build-es6",
     "build-cjs": "rimraf lib && babel ./modules -d lib --ignore '__tests__'",
@@ -21,6 +20,7 @@
     "build-umd": "NODE_ENV=development webpack modules/index.js umd/ReactRouter.js",
     "build-min": "NODE_ENV=production webpack -p modules/index.js umd/ReactRouter.min.js",
     "lint": "eslint modules examples",
+    "prepublish": "node scripts/build.js",
     "start": "node examples/server.js",
     "test": "npm run lint && npm run test-node && npm run test-browser",
     "test-browser": "karma start",

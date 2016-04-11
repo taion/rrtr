@@ -1,14 +1,36 @@
-## [HEAD] \(v2.1.0\)
+## [HEAD] \(v2.2.0\)
 > Unreleased
+
+- **Deprecation:** Deprecate nested routes with absolute paths ([#3])
+- **Bugfix:** Stop matching extraneous slashes in paths ([#3158])
+- **Minor:** Only warn once for deprecations ([#2])
+
+[HEAD]: https://github.com/taion/react-router/compare/v2.1.1...HEAD
+[#2]: https://github.com/taion/react-router/pull/2
+[#3]: https://github.com/taion/react-router/pull/3
+[#3158]: https://github.com/reactjs/react-router/pull/3158
+
+
+## [v2.1.1]
+> 2016-04-04
+
+- **Minor:** Fix packaging error
+
+[v2.1.1]: https://github.com/taion/react-router/compare/v2.1.0...v2.1.1
+
+
+## [v2.1.0]
+> 2016-04-04
 
 - **Feature:** Add support for `onChange` hook on routes ([#3108])
 - **Minor:** Include full warning messages in non-minified UMD build ([#3213])
 - **Minor:** Speed up path matching ([#3217])
 
-[HEAD]: https://github.com/reactjs/react-router/compare/latest...HEAD
+[v2.1.0]: https://github.com/taion/react-router/compare/v2.0.1...v2.1.0
 [#3108]: https://github.com/reactjs/react-router/pull/3108
 [#3213]: https://github.com/reactjs/react-router/pull/3213
 [#3217]: https://github.com/reactjs/react-router/pull/3217
+
 
 ## [v2.0.1]
 > March 9, 2016
