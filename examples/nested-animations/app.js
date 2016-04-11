@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
-import { browserHistory, Router, Route, Link } from 'react-router'
+import { browserHistory, Router, Route, Link } from 'rrtr'
 import './app.css'
 
 class App extends Component {

@@ -53,7 +53,7 @@ Alias for `children`.
 The history the router should listen to. Typically `browserHistory` or `hashHistory`.
 
 ```js
-import { browserHistory } from 'react-router'
+import { browserHistory } from 'rrtr'
 ReactDOM.render(<Router history={browserHistory} />, el)
 ```
 
@@ -116,15 +116,15 @@ A [location descriptor](https://github.com/mjackson/history/blob/master/docs/Glo
   * `hash`: A hash to put in the URL, e.g. `#a-hash`.
   * `state`: State to persist to the `location`.
 
-##### `query` **([Deprecated](https://github.com/reactjs/react-router/blob/master/upgrade-guides/v2.0.0.md#link-to-onenter-and-isactive-use-location-descriptors) see `to`)**
+##### `query` **([Deprecated](/upgrade-guides/v2.0.0.md#link-to-onenter-and-isactive-use-location-descriptors) see `to`)**
 An object of key:value pairs to be stringified.
 
-##### `hash` **([Deprecated](https://github.com/reactjs/react-router/blob/master/upgrade-guides/v2.0.0.md#link-to-onenter-and-isactive-use-location-descriptors) see `to`)**
+##### `hash` **([Deprecated](/upgrade-guides/v2.0.0.md#link-to-onenter-and-isactive-use-location-descriptors) see `to`)**
 A hash to put in the URL, e.g. `#a-hash`.
 
 _Note: React Router currently does not manage scroll position, and will not scroll to the element corresponding to the hash. Scroll position management utilities are available in the [scroll-behavior](https://github.com/taion/scroll-behavior) library._
 
-##### `state` **([Deprecated](https://github.com/reactjs/react-router/blob/master/upgrade-guides/v2.0.0.md#link-to-onenter-and-isactive-use-location-descriptors) see `to`)**
+##### `state` **([Deprecated](/upgrade-guides/v2.0.0.md#link-to-onenter-and-isactive-use-location-descriptors) see `to`)**
 State to persist to the `location`.
 
 ##### `activeClassName`

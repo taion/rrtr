@@ -17,7 +17,7 @@ You import them from the React Router package:
 
 ```js
 // JavaScript module import
-import { browserHistory } from 'react-router'
+import { browserHistory } from 'rrtr'
 ```
 
 Then pass them into your `<Router>`:
@@ -116,7 +116,7 @@ app, the client entry point would look like:
 ```js
 import React from 'react'
 import { render } from 'react-dom'
-import { browserHistory, Router, Route, IndexRoute } from 'react-router'
+import { browserHistory, Router, Route, IndexRoute } from 'rrtr'
 
 import App from '../components/App'
 import Home from '../components/Home'
@@ -150,7 +150,7 @@ factory with the [useQueries](https://github.com/mjackson/history/blob/master/do
 Defining a basename:
 
 ```js
-import { useRouterHistory } from 'react-router'
+import { useRouterHistory } from 'rrtr'
 import { createHistory } from 'history'
 
 const history = useRouterHistory(createHistory)({
@@ -163,7 +163,7 @@ Using the
 enhancer:
 
 ```js
-import { useRouterHistory } from 'react-router'
+import { useRouterHistory } from 'rrtr'
 import { createHistory, useBeforeUnload } from 'history'
 
 const history = useRouterHistory(useBeforeUnload(createHistory))()

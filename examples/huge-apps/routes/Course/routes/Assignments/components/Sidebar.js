@@ -1,6 +1,6 @@
 /*globals COURSES:true */
 import React, { Component } from 'react'
-import { Link } from 'react-router'
+import { Link } from 'rrtr'
 
 class Sidebar extends Component {
   render() {

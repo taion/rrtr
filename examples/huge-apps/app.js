@@ -1,7 +1,7 @@
 /*eslint-disable no-unused-vars */
 import React from 'react'
 import { render } from 'react-dom'
-import { Router, browserHistory } from 'react-router'
+import { Router, browserHistory } from 'rrtr'
 import stubbedCourses from './stubs/COURSES'
 
 const rootRoute = {
@@ -28,7 +28,7 @@ render(
 // better idea of just what this huge-apps Router looks like, or just look at the
 // file system :)
 //
-// import { Route } from 'react-router'
+// import { Route } from 'rrtr'
 
 // import App from './components/App'
 // import Course from './routes/Course/components/Course'

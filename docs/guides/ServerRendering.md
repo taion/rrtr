@@ -15,7 +15,7 @@ It looks something like this with an imaginary JavaScript server:
 
 ```js
 import { renderToString } from 'react-dom/server'
-import { match, RouterContext } from 'react-router'
+import { match, RouterContext } from 'rrtr'
 import routes from './routes'
 
 serve((req, res) => {
