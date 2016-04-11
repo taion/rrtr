@@ -11,7 +11,8 @@ describe('matchRoutes', function () {
   let routes
   let
     RootRoute, UsersRoute, UsersIndexRoute, UserRoute, PostRoute, FilesRoute,
-    AboutRoute, GreedyRoute, OptionalRoute, OptionalRouteChild, CatchAllRoute
+    AboutRoute, TeamRoute, ProfileRoute, GreedyRoute, OptionalRoute,
+    OptionalRouteChild, CatchAllRoute
   let createLocation = createMemoryHistory().createLocation
 
   beforeEach(function () {
@@ -19,7 +20,10 @@ describe('matchRoutes', function () {
     <Route>
       <Route path="users">
         <IndexRoute />
-        <Route path=":userID" />
+        <Route path=":userID">
+          <Route path="/profile" />
+        </Route>
+        <Route path="/team" />
       </Route>
     </Route>
     <Route path="/about" />
@@ -38,10 +42,16 @@ describe('matchRoutes', function () {
               UserRoute = {
                 path: ':userID',
                 childRoutes: [
+                  ProfileRoute = {
+                    path: '/profile'
+                  },
                   PostRoute = {
                     path: ':postID'
                   }
                 ]
+              },
+              TeamRoute = {
+                path: '/team'
               }
             ]
           }
@@ -224,13 +234,6 @@ describe('matchRoutes', function () {
 
     describe('when the location matches a nested absolute route', function () {
       it('matches the correct routes', function (done) {
-        shouldWarn('deprecated')
-
-        const TeamRoute = {
-          path: '/team'
-        }
-        UsersRoute.childRoutes.push(TeamRoute)
-
         matchRoutes(routes, createLocation('/team'), function (error, match) {
           expect(match).toExist()
           expect(match.routes).toEqual([ RootRoute, UsersRoute, TeamRoute ])
@@ -241,13 +244,6 @@ describe('matchRoutes', function () {
 
     describe('when the location matches an absolute route nested under a route with params', function () {
       it('matches the correct routes and params', function (done) {
-        shouldWarn('deprecated')
-
-        const ProfileRoute = {
-          path: '/profile'
-        }
-        UserRoute.childRoutes.push(ProfileRoute)
-
         matchRoutes(routes, createLocation('/profile'), function (error, match) {
           expect(match).toExist()
           expect(match.routes).toEqual([ RootRoute, UsersRoute, UserRoute, ProfileRoute ])
