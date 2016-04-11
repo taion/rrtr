@@ -7,6 +7,8 @@ rrtr keeps your UI in sync with the URL. It has a simple API with powerful featu
 [![Coveralls][coveralls-badge]][coveralls]
 [![Discord][discord-badge]][discord]
 
+**rrtr**? It's an actively-maintained fork of React Router. More details [here](https://medium.com/@taion/react-router-is-dead-long-live-rrtr-d229ca30e318).
+
 ### Docs & Help
 
 - [Tutorial – do this first!](https://github.com/reactjs/react-router-tutorial)
