@@ -1,13 +1,13 @@
 ## [HEAD] \(v2.2.0\)
 > Unreleased
 
-- **Deprecation:** Deprecate nested routes with absolute paths ([#3])
+- **Deprecation:** Deprecate nested routes with absolute paths ([6f40116])
 - **Bugfix:** Stop matching extraneous slashes in paths ([#3158])
-- **Minor:** Only warn once for deprecations ([#2])
+- **Minor:** Only warn once for deprecations ([4782842])
 
-[HEAD]: https://github.com/taion/react-router/compare/v2.1.1...HEAD
-[#2]: https://github.com/taion/react-router/pull/2
-[#3]: https://github.com/taion/react-router/pull/3
+[HEAD]: https://github.com/taion/rrtr/compare/v2.1.1...HEAD
+[6f40116]: https://github.com/taion/rrtr/commit/6f401169415da3e5b34eb93beb846468a0a369b2
+[4782842]: https://github.com/taion/rrtr/commit/4782842802900dc0424fca341cfcaa3f2cf71eea
 [#3158]: https://github.com/reactjs/react-router/pull/3158
 
 
@@ -16,7 +16,7 @@
 
 - **Minor:** Fix packaging error
 
-[v2.1.1]: https://github.com/taion/react-router/compare/v2.1.0...v2.1.1
+[v2.1.1]: https://github.com/taion/rrtr/compare/v2.1.0...v2.1.1
 
 
 ## [v2.1.0]
@@ -26,7 +26,7 @@
 - **Minor:** Include full warning messages in non-minified UMD build ([#3213])
 - **Minor:** Speed up path matching ([#3217])
 
-[v2.1.0]: https://github.com/taion/react-router/compare/v2.0.1...v2.1.0
+[v2.1.0]: https://github.com/taion/rrtr/compare/v2.0.1...v2.1.0
 [#3108]: https://github.com/reactjs/react-router/pull/3108
 [#3213]: https://github.com/reactjs/react-router/pull/3213
 [#3217]: https://github.com/reactjs/react-router/pull/3217

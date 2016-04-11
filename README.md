@@ -1,25 +1,21 @@
-# react-router [![npm package][npm-badge]][npm]
+# rrtr [![Travis][build-badge]][build] [![npm package][npm-badge]][npm]
 
-[`react-router`](https://www.npmjs.com/package/react-router) is a complete routing library for [React](https://facebook.github.io/react).
+[rrtr](https://www.npmjs.com/package/rrtr) is a complete routing library for [React](https://facebook.github.io/react).
 
-React Router keeps your UI in sync with the URL. It has a simple API with powerful features like lazy code loading, dynamic route matching, and location transition handling built right in. Make the URL your first thought, not an after-thought.
+rrtr keeps your UI in sync with the URL. It has a simple API with powerful features like lazy code loading, dynamic route matching, and location transition handling built right in. Make the URL your first thought, not an after-thought.
 
+[![Coveralls][coveralls-badge]][coveralls]
 [![Discord][discord-badge]][discord]
 
 ### Docs & Help
 
 - [Tutorial – do this first!](https://github.com/reactjs/react-router-tutorial)
-- [Guides and API docs](https://github.com/reactjs/react-router/tree/master/docs)
-- [Troubleshooting guide](https://github.com/reactjs/react-router/blob/master/docs/Troubleshooting.md)
+- [Guides and API docs](https://github.com/taion/rrtr/tree/master/docs)
+- [Troubleshooting guide](https://github.com/taion/rrtr/blob/master/docs/Troubleshooting.md)
 - [Changelog](/CHANGES.md)
 - [Stack Overflow](http://stackoverflow.com/questions/tagged/react-router)
 - [CodePen boilerplate](http://codepen.io/anon/pen/xwQZdy?editors=001)
   Please use for bug reports
-
-**Older Versions:**
-
-- 0.13.x - [docs](https://github.com/reactjs/react-router/tree/0.13.x/docs/guides) / [code](https://github.com/reactjs/react-router/tree/0.13.x) / [upgrade guide](https://github.com/reactjs/react-router/blob/master/upgrade-guides/v1.0.0.md)
-- 1.0.x - [docs](https://github.com/reactjs/react-router/tree/1.0.x/docs) / [code](https://github.com/reactjs/react-router/tree/1.0.x) / [upgrade guide](https://github.com/reactjs/react-router/blob/master/upgrade-guides/v2.0.0.md)
 
 For questions and support, please visit [our channel on Reactiflux](https://discord.gg/0ZcbPKXt5bYaNQ46) or [Stack Overflow](http://stackoverflow.com/questions/tagged/react-router). The issue tracker is *exclusively* for bug reports and feature requests.
 
@@ -31,24 +27,24 @@ We support all browsers and environments where React runs.
 
 Using [npm](https://www.npmjs.com/):
 
-    $ npm install --save react-router
+    $ npm install --save rrtr
 
 Then with a module bundler like [webpack](https://webpack.github.io/) that supports either CommonJS or ES2015 modules, use as you would anything else:
 
 ```js
 // using an ES6 transpiler, like babel
-import { Router, Route, Link } from 'react-router'
+import { Router, Route, Link } from 'rrtr'
 
 // not using an ES6 transpiler
-var Router = require('react-router').Router
-var Route = require('react-router').Route
-var Link = require('react-router').Link
+var Router = require('rrtr').Router
+var Route = require('rrtr').Route
+var Link = require('rrtr').Link
 ```
 
 The UMD build is also available on [npmcdn](https://npmcdn.com):
 
 ```html
-<script src="https://npmcdn.com/react-router/umd/ReactRouter.min.js"></script>
+<script src="https://npmcdn.com/rrtr/umd/ReactRouter.min.js"></script>
 ```
 
 You can find the library on `window.ReactRouter`.
@@ -58,7 +54,7 @@ You can find the library on `window.ReactRouter`.
 ```js
 import React from 'react'
 import { render } from 'react-dom'
-import { Router, Route, Link, browserHistory } from 'react-router'
+import { Router, Route, Link, browserHistory } from 'rrtr'
 
 const App = React.createClass({/*...*/})
 const About = React.createClass({/*...*/})
@@ -119,11 +115,11 @@ render((
 ), document.body)
 ```
 
-See more in the [Introduction](https://github.com/reactjs/react-router/tree/master/docs/Introduction.md), [Guides](https://github.com/reactjs/react-router/tree/master/docs/guides/README.md), and [Examples](https://github.com/reactjs/react-router/tree/master/examples).
+See more in the [Introduction](https://github.com/taion/rrtr/tree/master/docs/Introduction.md), [Guides](https://github.com/taion/rrtr/tree/master/docs/guides/README.md), and [Examples](https://github.com/taion/rrtr/tree/master/examples).
 
 ### Versioning and Stability
 
-We want React Router to be a stable dependency that’s easy to keep current. We follow the same versioning as React.js itself: [React Versioning Scheme](https://facebook.github.io/react/blog/2016/02/19/new-versioning-scheme.html).
+We want rrtr to be a stable dependency that’s easy to keep current. We follow the same versioning as React.js itself: [React Versioning Scheme](https://facebook.github.io/react/blog/2016/02/19/new-versioning-scheme.html).
 
 ### Thanks
 
@@ -132,10 +128,14 @@ React Router.
 
 React Router was initially inspired by Ember's fantastic router. Many thanks to the Ember team.
 
-Also, thanks to [BrowserStack](https://www.browserstack.com/) for providing the infrastructure that allows us to run our build in real browsers.
+[build-badge]: https://img.shields.io/travis/taion/rrtr/master.svg
+[build]: https://travis-ci.org/taion/rrtr
 
-[npm-badge]: https://img.shields.io/npm/v/react-router2.svg?style=flat-square
-[npm]: https://www.npmjs.org/package/react-router2
+[npm-badge]: https://img.shields.io/npm/v/rrtr.svg
+[npm]: https://www.npmjs.org/package/rrtr
 
-[discord-badge]: https://img.shields.io/badge/Discord-join%20chat%20%E2%86%92-738bd7.svg?style=flat-square
+[coveralls-badge]: https://img.shields.io/coveralls/taion/rrtr/master.svg
+[coveralls]: https://coveralls.io/github/taion/rrtr
+
+[discord-badge]: https://img.shields.io/badge/Discord-join%20chat%20%E2%86%92-738bd7.svg
 [discord]: https://discord.gg/0ZcbPKXt5bYaNQ46
