@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { browserHistory, Router, Route, Link } from 'react-router'
+import { browserHistory, Router, Route, Link } from 'rrtr'
 import './app.css'
 
 const App = React.createClass({

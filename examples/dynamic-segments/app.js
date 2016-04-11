@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
-import { browserHistory, Router, Route, Link, Redirect } from 'react-router'
+import { browserHistory, Router, Route, Link, Redirect } from 'rrtr'
 
 class App extends Component {
   render() {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { browserHistory, Router, Route, IndexRoute, Link } from 'react-router'
+import { browserHistory, Router, Route, IndexRoute, Link } from 'rrtr'
 
 const PICTURES = [
   { id: 0, src: 'http://placekitten.com/601/601' },
