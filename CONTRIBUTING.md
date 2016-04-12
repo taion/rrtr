@@ -16,10 +16,8 @@ issue.
 ## Think You Found a Bug?
 
 Please provide a test case of some sort. Best is a pull request with a
-failing test. Next is a link to codepen/jsbin or repository that
+failing test. Next is a link to CodePen/JS Bin or repository that
 illustrates the bug. Finally, some copy/pastable code is acceptable.
-
-If you don't provide a test case, the issue will be closed.
 
 <a name="api"/>
 ## Proposing New or Changed API?

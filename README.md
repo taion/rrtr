@@ -12,14 +12,13 @@ rrtr keeps your UI in sync with the URL. It has a simple API with powerful featu
 ### Docs & Help
 
 - [Tutorial – do this first!](https://github.com/reactjs/react-router-tutorial)
-- [Guides and API docs](https://github.com/taion/rrtr/tree/master/docs)
-- [Troubleshooting guide](https://github.com/taion/rrtr/blob/master/docs/Troubleshooting.md)
+- [Guides and API docs](/docs)
+- [Troubleshooting guide](/docs/Troubleshooting.md)
 - [Changelog](/CHANGES.md)
 - [Stack Overflow](http://stackoverflow.com/questions/tagged/react-router)
-- [CodePen boilerplate](http://codepen.io/anon/pen/xwQZdy?editors=001)
-  Please use for bug reports
+- [CodePen boilerplate](http://codepen.io/anon/pen/xwQZdy?editors=001) for bug reports
 
-For questions and support, please visit [our channel on Reactiflux](https://discord.gg/0ZcbPKXt5bYaNQ46) or [Stack Overflow](http://stackoverflow.com/questions/tagged/react-router). The issue tracker is *exclusively* for bug reports and feature requests.
+For questions and support, please visit [our channel on Reactiflux](https://discord.gg/0ZcbPKXt5bYaNQ46) or [Stack Overflow](http://stackoverflow.com/questions/tagged/react-router).
 
 ### Browser Support
 
@@ -117,7 +116,7 @@ render((
 ), document.body)
 ```
 
-See more in the [Introduction](https://github.com/taion/rrtr/tree/master/docs/Introduction.md), [Guides](https://github.com/taion/rrtr/tree/master/docs/guides/README.md), and [Examples](https://github.com/taion/rrtr/tree/master/examples).
+See more in the [Introduction](/docs/Introduction.md), [Guides](/docs/guides/README.md), and [Examples](/examples).
 
 ### Versioning and Stability
 
