@@ -1,6 +1,6 @@
 {
   "name": "rrtr",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "A complete routing library for React.js",
   "files": [
     "es",
