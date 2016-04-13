@@ -1,12 +1,14 @@
-## [HEAD] \(v2.1.3\)
-> Unreleased
+## [v2.2.0]
+> 2016-04-13
 
+- **Feature/Deprecation:** Call `getComponent` and `getComponents` with `nextState`; deprecate accessing `location` directly in favor of `nextState.location` there ([#16], [Upgrade Guide](/upgrade-guides/v2.2.0.md#getcomponent-getcomponents-signature))
 - **Bugfix:** Stop matching extraneous slashes in paths ([#3158])
 - **Minor:** Use `Proxy` for deprecating object properties and exclude the deprecation wrapper logic entirely from production builds ([#15])
 
-[HEAD]: https://github.com/taion/rrtr/compare/v2.1.2...HEAD
+[v2.2.0]: https://github.com/taion/rrtr/compare/v2.1.2...v2.2.0
 [#3158]: https://github.com/reactjs/react-router/pull/3158
 [#15]: https://github.com/taion/rrtr/pull/15
+[#16]: https://github.com/taion/rrtr/pull/16
 
 
 ## [v2.1.2]
