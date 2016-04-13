@@ -1,41 +1,26 @@
-/*eslint no-empty: 0*/
 import warning from './routerWarning'
 
-let useMembrane = false
+// No-op by default.
+let deprecateObjectProperties = object => object
 
 if (__DEV__) {
-  try {
-    if (Object.defineProperty({}, 'x', { get() { return true } }).x) {
-      useMembrane = true
-    }
-  } catch(e) { }
-}
+  if (typeof Proxy === 'function') {
+    deprecateObjectProperties = (object, message) => {
+      return new Proxy(object, {
+        get(target, name) {
+          // Only warn for own properties to avoid false positives.
+          if (Object.prototype.hasOwnProperty.call(target, name)) {
+            warning(false, message)
+          }
 
-// wraps an object in a membrane to warn about deprecated property access
-export default function deprecateObjectProperties(object, message) {
-  if (!useMembrane)
-    return object
+          return target[name]
+        },
 
-  const membrane = {}
-
-  for (let prop in object) {
-    if (typeof object[prop] === 'function') {
-      membrane[prop] = function () {
-        warning(false, message)
-        return object[prop].apply(object, arguments)
-      }
-    } else {
-      Object.defineProperty(membrane, prop, {
-        configurable: false,
-        enumerable: false,
-        get() {
-          warning(false, message)
-          return object[prop]
-        }
+        ownKeys: () => []
       })
     }
   }
-
-  return membrane
 }
 
+// wraps an object in a membrane to warn about deprecated property access
+export default deprecateObjectProperties
