@@ -1,10 +1,12 @@
-## [HEAD] \(v2.2.0\)
+## [HEAD] \(v2.1.3\)
 > Unreleased
 
 - **Bugfix:** Stop matching extraneous slashes in paths ([#3158])
+- **Minor:** Use `Proxy` for deprecating object properties and exclude the deprecation wrapper logic entirely from production builds ([#15])
 
 [HEAD]: https://github.com/taion/rrtr/compare/v2.1.2...HEAD
 [#3158]: https://github.com/reactjs/react-router/pull/3158
+[#15]: https://github.com/taion/rrtr/pull/15
 
 
 ## [v2.1.2]
