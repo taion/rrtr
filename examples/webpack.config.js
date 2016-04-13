@@ -30,7 +30,7 @@ module.exports = {
 
   resolve: {
     alias: {
-      'rrtr': path.join(__dirname, '..')
+      'rrtr': path.join(__dirname, '../modules')
     }
   },
 
