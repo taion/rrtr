@@ -4,6 +4,9 @@ import { render, unmountComponentAtNode } from 'react-dom'
 import createHistory from '../createMemoryHistory'
 import Route from '../Route'
 import Router from '../Router'
+import shouldWarn from './shouldWarn'
+
+const isProxySupported = typeof Proxy === 'function'
 
 describe('Router', function () {
 
@@ -329,7 +332,8 @@ describe('Router', function () {
 
     it('should support getComponent', function (done) {
       const Component = () => <div />
-      const getComponent = (_, callback) => {
+      const getComponent = (nextState, callback) => {
+        expect(nextState.location.pathname).toBe('/')
         setTimeout(() => callback(null, Component))
       }
 
@@ -349,7 +353,8 @@ describe('Router', function () {
       const foo = () => <div />
       const bar = () => <div />
 
-      const getComponents = (_, callback) => {
+      const getComponents = (nextState, callback) => {
+        expect(nextState.location.pathname).toBe('/')
         setTimeout(() => callback(null, { foo, bar }))
       }
 
@@ -364,6 +369,30 @@ describe('Router', function () {
         })
       })
     })
+
+    it('should supply location properties to getComponent', function (done) {
+      if (isProxySupported) {
+        shouldWarn('deprecated')
+      }
+
+      const Component = () => <div />
+      const getComponent = (location, callback) => {
+        expect(location.pathname).toBe('/')
+        setTimeout(() => callback(null, Component))
+      }
+
+      render((
+        <Router history={createHistory('/')} render={renderSpy}>
+          <Route path="/" getComponent={getComponent} />
+        </Router>
+      ), node, function () {
+        setTimeout(function () {
+          expect(componentSpy).toHaveBeenCalledWith([ Component ])
+          done()
+        })
+      })
+    })
+
   })
 
   describe('error handling', function () {
