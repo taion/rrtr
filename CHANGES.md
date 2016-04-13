@@ -1,3 +1,11 @@
+## [v2.2.2]
+> 2016-04-13
+
+- **Minor:** Republish to npm to show deprecation note
+
+[v2.2.2]: https://github.com/taion/rrtr/compare/v2.2.1...v2.2.2
+
+
 ## [v2.2.1]
 > 2016-04-13
 
