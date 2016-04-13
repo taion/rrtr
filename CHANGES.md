@@ -1,3 +1,12 @@
+## [v2.2.1]
+> 2016-04-13
+
+- **Bugfix:** Fix object property deprecation on browsers with incomplete `Proxy` support ([#18])
+
+[v2.2.1]: https://github.com/taion/rrtr/compare/v2.2.0...v2.2.1
+[#18]: https://github.com/taion/rrtr/pull/18
+
+
 ## [v2.2.0]
 > 2016-04-13
 
