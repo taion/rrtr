@@ -1,1 +1,1 @@
-### This package is deprecated. Please switch back to React Router.
+### This package is deprecated.
